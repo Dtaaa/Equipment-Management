@@ -1,13 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
 
-  </head>
-  <body>
-    <div>
-      <p>
-        return
-      </p>
-    </div>
-  </body>
+<head>
+    <meta charset="UTF-8" />
+    <title>Psomagen</title>
+    <link rel="stylesheet" href="./css/researchForm.css" />
+    <script src="./js/researchFormValidation.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto+Slab:wght@500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Return Form</h1>
+    </header>
+
+    <section>
+        <form id="researchForm" action="http://localhost:3000/processForm" method="POST">
+            <fieldset>
+
+              <legend>
+                  <em>General Information</em>
+              </legend>
+              Name: <input id="firstname" type="text" name="name" autofocus required />
+              </fieldset>
+
+
+
+            <fieldset>
+                <legend>
+                    <em>Equipment Info</em>
+                </legend>
+
+                <article>
+                    <fieldset>
+                        <legend>Equipment type</legend>
+                        <p style="margin:5px">How long have you experienced any of the above conditions?<br \></p>
+                        <input type="radio"  name="equipment" value="2tb" />
+                        <label for ="2tb">2TB HDD</label>
+                        <input type="radio" name="equipment" value="4tb" />
+                        <label for="4tb">4TB HDD</label>
+                        <input type="radio" name="equipment" value="usb" />
+                        <label for="usb">USB</label>
+                        <input type="radio"  name="equipment" value="tool" />
+                        <label for="tool">Tool Box</label>
+                        <input type="radio"  name="equipment" value="laptop" />
+                        <label for="laptop">Laptop</label>
+
+                    </fieldset>
+
+                </article>
+
+                <article>
+                    <fieldset>
+                        <legend>Quantity & Period</legend>
+                        Quantity:
+                        <select id="studyType" name="studyType" style="margin-right:10px">
+                            <option value="Long Term" selected="selected">Long Term</option>
+                            <option value="Short Term">Short Term</option>
+                        </select>
+                        Return Date:
+                        <input id="returnDate" name="returnDate" type="date"/>
+
+
+                    </fieldset>
+
+                </article>
+
+            </fieldset>
+            <fieldset>
+                <input type="reset" value="Clear Form" />
+                <input type="submit" value="Submit Information" />
+                <input type="button" value="Cancel" onclick="window.location.href='main.html'"/>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        IT Infra Dept
+    </footer>
+</body>
+
 </html>
