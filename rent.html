@@ -24,7 +24,16 @@
               <legend>
                   <em>General Information</em>
               </legend>
-              Name: <input id="firstname" type="text" name="name" autofocus required />
+              <div style="width:250px; display:inline-block">Name: <input id="firstname" type="text" name="name" autofocus required /></div>
+              Department: <select id="studyType" name="studyType" style="margin-right:10px">
+                  <option value="bi" selected="selected">B.I</option>
+                  <option value="ngs">NGS</option>
+                  <option value="ces">CES</option>
+                  <option value="dtc">DTC</option>
+                  <option value="hracc">HR & ACC</option>
+                  <option value="sales">SALES</option>
+              </select>
+
               </fieldset>
 
 
@@ -71,9 +80,9 @@
 
             </fieldset>
             <fieldset style="margin-top:10px">
-                <input type="reset" value="Clear Form" />
-                <input type="submit" value="Submit Information" />
-                <button onclick="history.back()">Cancel</button>
+                <input style="margin-right:10px" type="reset" value="Clear Form"/>
+                <input style="margin-right:10px" type="submit" value="Submit Information" />
+                <input type="button" value="Cancel" onclick="history.back()"/>
 
             </fieldset>
         </form>
