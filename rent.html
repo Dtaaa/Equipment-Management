@@ -26,7 +26,8 @@
               </legend>
               <div style="width:250px; display:inline-block">Name: <input id="firstname" type="text" name="name" autofocus required /></div>
               Department: <select id="studyType" name="studyType" style="margin-right:10px">
-                  <option value="bi" selected="selected">B.I</option>
+                  <option selected></option>
+                  <option value="bi">B.I</option>
                   <option value="ngs">NGS</option>
                   <option value="ces">CES</option>
                   <option value="dtc">DTC</option>
@@ -47,8 +48,7 @@
                     <fieldset>
                         <legend>Equipment type</legend>
                         <p style="margin:5px">How long have you experienced any of the above conditions?<br \></p>
-                        <input type="radio"  name="equipment" value="2tb" />
-                        <label for ="2tb">2TB HDD</label>
+                      
                         <input type="radio" name="equipment" value="4tb" />
                         <label for="4tb">4TB HDD</label>
                         <input type="radio" name="equipment" value="usb" />
@@ -63,7 +63,7 @@
                 </article>
 
                 <article>
-                    <fieldset>
+                    <fieldset style="margin-top:10px">
                         <legend>Quantity & Period</legend>
                         Quantity:
                         <select id="studyType" name="studyType" style="margin-right:10px">
@@ -79,19 +79,19 @@
                 </article>
 
             </fieldset>
-<<<<<<< HEAD
+            <article>
+
+
             <fieldset style="margin-top:10px">
+              <legend><em>Submit</em></legend>
+
                 <input style="margin-right:10px" type="reset" value="Clear Form"/>
                 <input style="margin-right:10px" type="submit" value="Submit Information" />
                 <input type="button" value="Cancel" onclick="history.back()"/>
 
-=======
-            <fieldset>
-                <input type="reset" value="Clear Form" />
-                <input type="submit" value="Submit Information" />
-                <input type="button" value="Cancel" onclick="window.location.href='main.html'"/>
->>>>>>> 9fe19a073139d124a30bc943f89582693d705b4c
+
             </fieldset>
+            </article>
         </form>
     </section>
 
