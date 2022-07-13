@@ -18,7 +18,7 @@
     </header>
 
     <section>
-        <form id="researchForm" action="http://localhost:3000/processForm" method="POST">
+        <form id="researchForm" action="http://localhost:3000/return.html" method="POST">
             <fieldset>
 
               <legend>
@@ -74,7 +74,7 @@
               </legend>
                 <input type="reset" value="Clear Form" />
                 <input type="submit" value="Submit Information" />
-                <input type="button" value="Cancel" onclick="window.location.href='main.html'"/>
+                <input type="button" value="Cancel" onclick="history.back()"/>
             </fieldset>
         </form>
     </section>
